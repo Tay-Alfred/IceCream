@@ -9,35 +9,35 @@
 <body>
     <div class="col" id="iceCreamBox">
     <section>
-        <form>
+        <form id="iceCreambox1">
             <div class="col">
                 <div class="row">
                     <section>
-                    <label id="numOfScoopsLabel">Number of Scoops</label>
+                    <label for="numOfScoopsLabel" id="numOfScoopsLabel">Number of Scoops</label>
                     <input type="text" id="numOfScoops" placeholder="Ex: 3">
 
                     <!-- radio buttons for cone or cup -->
-                    <label id="radioConeLabel">Cone</label>
-                    <input type="radio" id="radioCone">
+                    <label for="radioConeLabel" id="radioConeLabel" >Cone</label>
+                    <input type="radio" name="cupOrCone"id="radioCone" value="cone">
 
-                    <label id="radioCupLabel">Cup</label>
-                    <input type="radio" id="radioCup">
+                    <label for="radioCupLabel"   id="radioCupLabel">Cup</label>
+                    <input type="radio" id="radioCup" name="cupOrCone" value="cup">
                 </section>
-
+                <!-- checkboxes go here -->
                 <section>
                     <fieldset id="toppingsBox">
                         <legend id="toppingsLegend"></legend>
 
-                        <label id="labelWhippedCream">Whipped Cream ($.25)</label>
+                        <label for="labelWhippedCream"  id="labelWhippedCream">Whipped Cream ($.25)</label>
                         <input type="checkbox" id="checkWhippedCream">
 
-                        <label id="labelHotFudge">Hot Fudge ($1.25)</label>
+                        <label  for="labelHotFudge" id="labelHotFudge">Hot Fudge ($1.25)</label>
                         <input type="checkbox" id="checkHotFudge">
 
-                        <label id="labelCherry">Cherry ($.25)</label>
+                        <label for="labelCherry"  id="labelCherry">Cherry ($.25)</label>
                         <input type="checkbox" id="checkCherry">
 
-                        <label id="labelSprinkles">Sprinkles ($.50)</label>
+                        <label for="labelSprinkles"  id="labelSprinkles">Sprinkles ($.50)</label>
                         <input type="checkbox" id="checkSprinkles">
 
 
@@ -71,4 +71,5 @@
     </section>
 </div>
 </body>
+<script src="scripts/index.js"></script>
 </html>
