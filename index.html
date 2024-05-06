@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
     <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
-    <div class="col" id="iceCreamBox">
-    <section>
-        <form id="iceCreambox1">
-            <div class="col">
-                <div class="row">
-                    <section>
-                    <label for="numOfScoopsLabel" id="numOfScoopsLabel">Number of Scoops</label>
-                    <input type="text" id="numOfScoops" placeholder="Ex: 3">
+    <header>
+        <div id="headerBox">
+            <h1>Mel-T's Ice Cream</h1>
+            <span>Here for your all your ice cream needs</span>
+        </div>
+    </header>
+    <main>
+        <div class="col" id="iceCreamBox">
+            <section>
+                <form id="iceCreambox1">
+                    <div class="col">
+                        <div class="row">
+                            <section>
+                                <label for="numOfScoopsLabel" id="numOfScoopsLabel">Number of Scoops</label>
+                                <input type="text" id="numOfScoops" placeholder="Ex: 3">
+                                <section id="breakItUp"></section>
+                                <!-- radio buttons for cone or cup -->
+                                <label for="radioConeLabel" id="radioConeLabel">Cone</label>
+                                <input type="radio" name="cupOrCone" id="radioCone" value="cone">
 
-                    <!-- radio buttons for cone or cup -->
-                    <label for="radioConeLabel" id="radioConeLabel" >Cone</label>
-                    <input type="radio" name="cupOrCone"id="radioCone" value="cone">
+                                <label for="radioCupLabel" id="radioCupLabel">Cup</label>
+                                <input type="radio" id="radioCup" name="cupOrCone" value="cup">
+                            </section>
+                            <!-- checkboxes go here -->
+                            <section>
+                                <fieldset id="toppingsBox">
+                                    <legend id="toppingsLegend">Toppings</legend>
 
-                    <label for="radioCupLabel"   id="radioCupLabel">Cup</label>
-                    <input type="radio" id="radioCup" name="cupOrCone" value="cup">
-                </section>
-                <!-- checkboxes go here -->
-                <section>
-                    <fieldset id="toppingsBox">
-                        <legend id="toppingsLegend"></legend>
-
-                        <label for="labelWhippedCream"  id="labelWhippedCream">Whipped Cream ($.25)</label>
-                        <input type="checkbox" id="checkWhippedCream">
-
-                        <label  for="labelHotFudge" id="labelHotFudge">Hot Fudge ($1.25)</label>
-                        <input type="checkbox" id="checkHotFudge">
-
-                        <label for="labelCherry"  id="labelCherry">Cherry ($.25)</label>
-                        <input type="checkbox" id="checkCherry">
-
-                        <label for="labelSprinkles"  id="labelSprinkles">Sprinkles ($.50)</label>
-                        <input type="checkbox" id="checkSprinkles">
+                                    <label for="labelWhippedCream" id="labelWhippedCream">Whipped Cream ($.25)</label>
+                                    <input type="checkbox" id="checkWhippedCream">
+                                    <section></section>
+                                    <label for="labelHotFudge" id="labelHotFudge">Hot Fudge ($1.25)</label>
+                                    <input type="checkbox" id="checkHotFudge">
+                                    <section></section>
+                                    <label for="labelCherry" id="labelCherry">Cherry ($.25)</label>
+                                    <input type="checkbox" id="checkCherry">
+                                    <section></section>
+                                    <label for="labelSprinkles" id="labelSprinkles">Sprinkles ($.50)</label>
+                                    <input type="checkbox" id="checkSprinkles">
 
 
-                    </fieldset>
-                </section>
+                                </fieldset>
+                            </section>
 
-                <section>
-                    <button id="submitButton" type="submit"><strong>Submit Order</strong></button>
-                </section>
-                <table id="priceSheet" class="table">
-                <tbody>
-                <tr>
-                    <td>Base Price:</td>
-                    <td>$xx.xx</td>
-                  </tr>
-                  <tr>
-                    <td>Tax:</td>
-                   <td>$xx.xx</td>
-                  </tr>
-                  <tr>
-                    <td>Total Due:</td>
-                   <td>$xx.xx</td>
-                  </tr>
-                  
-                </tbody>
-            </table>
+                            <section>
+                                <button id="submitButton" type="submit"><strong>Submit Order</strong></button>
+                            </section>
+                            <table id="priceSheet" class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Base Price:</td>
+                                        <td>$xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax:</td>
+                                        <td>$xx.xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Due:</td>
+                                        <td>$xx.xx</td>
+                                    </tr>
 
-                </div>
-            </div>
-        </form>
-    </section>
-</div>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 <script src="scripts/index.js"></script>
+
 </html>

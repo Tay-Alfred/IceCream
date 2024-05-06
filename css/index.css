@@ -1,5 +1,37 @@
 /* css for the script to show toppings */
 #toppingsBox {
     display: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-color: #f45190;
 }
 /* end of required css */
+body{
+    background-image: linear-gradient(#f62578,#7fffd4);
+}
+
+#headerBox{
+    border: 4px solid #f45190;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    padding-bottom: 10px;
+
+}
+#iceCreamBox{
+    border: 4px solid #f45190;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    padding: 40px;
+    background-color: #7fffd4;
+}
+#breakItUp{padding: 7px;}
+#submitButton{
+    margin-top:10px;
+    margin-bottom:10px;
+}
