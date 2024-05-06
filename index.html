@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="col" id="iceCreamBox">
+    <section>
+        <form>
+            <div class="col">
+                <div class="row">
+                    <section>
+                    <label id="numOfScoopsLabel">Number of Scoops</label>
+                    <input type="text" id="numOfScoops" placeholder="Ex: 3">
+
+                    <!-- radio buttons for cone or cup -->
+                    <label id="radioConeLabel">Cone</label>
+                    <input type="radio" id="radioCone">
+
+                    <label id="radioCupLabel">Cup</label>
+                    <input type="radio" id="radioCup">
+                </section>
+
+                <section>
+                    <fieldset id="toppingsBox">
+                        <legend id="toppingsLegend"></legend>
+
+                        <label id="labelWhippedCream">Whipped Cream ($.25)</label>
+                        <input type="checkbox" id="checkWhippedCream">
+
+                        <label id="labelHotFudge">Hot Fudge ($1.25)</label>
+                        <input type="checkbox" id="checkHotFudge">
+
+                        <label id="labelCherry">Cherry ($.25)</label>
+                        <input type="checkbox" id="checkCherry">
+
+                        <label id="labelSprinkles">Sprinkles ($.50)</label>
+                        <input type="checkbox" id="checkSprinkles">
+
+
+                    </fieldset>
+                </section>
+
+                <section>
+                    <button id="submitButton" type="submit"><strong>Submit Order</strong></button>
+                </section>
+                <table id="priceSheet" class="table">
+                <tbody>
+                <tr>
+                    <td>Base Price:</td>
+                    <td>$xx.xx</td>
+                  </tr>
+                  <tr>
+                    <td>Tax:</td>
+                   <td>$xx.xx</td>
+                  </tr>
+                  <tr>
+                    <td>Total Due:</td>
+                   <td>$xx.xx</td>
+                  </tr>
+                  
+                </tbody>
+            </table>
+
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>
