@@ -11,6 +11,7 @@ const radioCone =document.getElementById("radioCone");
     toppingsBox.style.display = this.checked ? 'block' : 'none';
  })
 
-    radioCone.addEventListener('change', function(){
+radioCone.addEventListener('change', function(){
+    // if cone radio button is checked, hide the toppings box
         toppingsBox.style.display = this.checked ? 'none' : 'block';
     });
